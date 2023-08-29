@@ -11,6 +11,33 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
+  <style>
+    table {
+      border-spacing: 30px;
+    }
+    table, th, td {
+      border: 1px solid black;
+      border-radius: 15px;
+      
+    }
+    th, td {
+      background-color: #96D4D4;
+      border-style: dashed;
+      border-color:crimson;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+    th {
+      text-align: left;
+    }
+    tr:hover {background-color: #D6EEEE;}
+    /* tr:nth-child(even) {
+      background-color:brown;
+    } */
+  </style>
+
 </head>
 
 <body>
@@ -54,6 +81,67 @@
   <q>Las citaciones sirven para aclarar un texto dentro de un documento</q> <br>
   <abbr title="Las citaciones sirven para aclarar un texto dentro de un documento">ejemplo abbr</abbr>
   </p>
+
+  <hr>
+  <caption>Ejemplo De Tabla</caption>
+  <table style="width: 100%">
+    
+    <tr>
+      <th style="width:70%">Company</th>
+      <th>Contact</th>
+      <th>Country</th>
+    </tr>
+    <tr style="height:200px">
+      <td>Alfreds Futterkiste</td>
+      <td>Maria Anders</td>
+      <td>Germany</td>
+    </tr>
+    <tr>
+      <td>Centro comercial Moctezuma</td>
+      <td>Francisco Chang</td>
+      <td>Mexico</td>
+    </tr>
+  </table>
+  
+  <br>
+
+  <table>
+    <tr>
+      <th colspan="2">Persona 1</th>
+      <th>Persona 2</th>
+      <th>Persona 3</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Emil</td>
+      <td>Tobias</td>
+      <td>Linus</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>14</td>
+      <td>10</td>
+    </tr>
+  </table>
+
+  <br>
+
+  <table>
+    <tr>
+      <th>Firstname</th>
+      <th>Jill</th>
+      <th>Eve</th>
+    </tr>
+    <tr>
+      <th>Lastname</th>
+      <td>Smith</td>
+      <td>Jackson</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>94</td>
+      <td>50</td>
+    </tr>
+  </table>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
